@@ -1,0 +1,28 @@
+﻿@page "/Apply"
+
+@inherits EmployeeList
+
+<PageTitle>Loan</PageTitle>
+
+<h3>Loan Request Form</h3>
+
+<div class="card-deck">
+    @foreach(var employee in Employees)
+    {
+       <div class=" card m-3" style=" min-width: 18rem; max-width:30.5%;">
+           <div class="card-header">
+               <h3>@employee.EmployeeName @employee.Email</h3>
+
+
+           </div>
+          </div>
+           <img class="card-img-top" src="@employee.Photos"style=" width: 50px"/>
+           <div calss=" card-footer text-center">
+               <a href="a" class="btn btn-primary m-1">View</a>
+               <a href="a" class="btn btn-primary m-1">Edit</a>
+               <a href="a" class="btn btn-danger m-1">Delete</a>
+            </div>
+      
+    }
+</div>
+

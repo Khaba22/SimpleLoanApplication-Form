@@ -1,0 +1,55 @@
+﻿@page "/Loan"
+@inherits EmployeeList
+
+<EditForm Model ="@Employee">
+    <h3> Edit Employee</h3>
+    <hr/>
+    <div class="form-group row">
+        <label for="EmployeeName"  class="col-sm-2 col-form-label">
+           First Name
+        </label> 
+        <div class="col-sm-10">
+            <InputText id="EmplayeeName" class="form-control"placeholder="EmployeeName"
+                      @bind-Value ="Employee.EmployeeName"/>
+
+          </div>
+      </div>
+    <div class="form-group row">
+        <label for="Email" class="col-sm-2 col-form-label">
+            Email
+        </label>
+        <div class="col-sm-10">
+            <InputText id="Email" class="form-control" placeholder="Email"
+                       @bind-Value="Employee.Email" />
+
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="LoanAmount" class="col-sm-2 col-form-label">
+            LoanAmount
+        </label>
+        <div class="col-sm-10">
+            <InputNumber id="LoanAmount" class="form-control" placeholder="LoanAmount"
+                       @bind-Value="Employee.LoanAmount" />
+
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="LoanDate" class="col-sm-2 col-form-label">
+            LoanDate
+        </label>
+        <div class="col-sm-10">
+            <InputDate id="LoanDate" class="form-control" placeholder="LoanDate"
+                         @bind-Value="Employee.loanDate" />
+
+        </div>
+    </div>
+
+</EditForm>
+
+
+<PageTitle>Loan</PageTitle>
+
+@code {
+
+}
